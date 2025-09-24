@@ -1,30 +1,33 @@
-/* ===== Navigation ===== */
+
 nav {
   background-color: #eee;
-  padding: 1rem;           
-  text-align: center;      
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;  
 }
 
 nav a {
-  text-decoration: none;   
-  color: #333;             
-  margin: 0 1rem;          
-  font-weight: bold;       
+  text-decoration: none;
+  color: #333;
+  margin: 0 1rem;
+  font-weight: bold;
+  padding: 0.5rem;                 
+  display: inline-block;           
 }
 
-/* ===== Main Heading ===== */
+
 h1 {
-  font-size: 2rem;         
-  color: #2a4d69;          
-  text-align: center;      
+  font-size: 2rem;
+  color: #2a4d69;
+  text-align: center;
+  margin: 1rem 0;                
 }
 
-/* ===== Main Content ===== */
 main {
   max-width: 840px;       
 }
 
-/* ===== Sidebar ===== */
+
 aside {
   width: 20rem;                       
   margin: 1rem;                       
@@ -40,12 +43,12 @@ aside img {
   height: auto;        
 }
 
-/* ===== Paragraphs ===== */
+
 p {
   padding: 0;            
 }
 
-/* ===== Footer ===== */
+
 footer {
   margin-top: 15px;      
   border-top: 1px solid #000; 
