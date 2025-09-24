@@ -1,0 +1,149 @@
+/* ===== Root Variables ===== */
+:root {
+    --primary-color: #055a05;       /* forest green */
+    --secondary-color: #f4a261;     /* warm sand */
+    --accent1-color: #264653;       /* dark slate blue */
+    --accent2-color: #e9c46a;       /* light golden yellow */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Reset Box Model ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    line-height: 1.5;
+}
+
+/* ===== Header ===== */
+header {
+    width: 840px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* ===== Main Container ===== */
+main {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: #fff;
+    opacity: 0.8;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    max-width: 60%;
+    background-color: rgba(255,255,255,0.85);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 10px;
+}
+
+/* ===== Sections ===== */
+section {
+    margin: 16px;
+    padding: 8px;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* ===== Footer ===== */
+footer {
+    width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: auto;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    header, main, footer {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .hero article {
+        max-width: 80%;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
