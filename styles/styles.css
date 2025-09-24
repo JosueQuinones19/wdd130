@@ -1,3 +1,9 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
 nav {
   background-color: #eee;
   padding: 1rem;
@@ -14,6 +20,13 @@ nav a {
   display: inline-block;
 }
 
+nav a:hover,
+nav a:focus {
+  background-color: #2a4d69;
+  color: #fff;
+  border-radius: 4px;
+}
+
 
 h1 {
   font-size: 2rem;
@@ -21,6 +34,7 @@ h1 {
   text-align: center;
   margin: 1rem 0;
 }
+
 
 main {
   max-width: 840px;
@@ -30,7 +44,7 @@ main {
 aside {
   width: 20rem;
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
+  border: 1px solid rgba(0,0,0,0.2);
   padding: 1rem;
   background-color: #eee;
   color: #333;
@@ -46,7 +60,6 @@ aside img {
 p {
   padding: 0;
 }
-
 
 footer {
   margin-top: 15px;
