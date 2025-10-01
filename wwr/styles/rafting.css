@@ -261,7 +261,7 @@ footer p {
     left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+    border: 0;
 }
 
 /* Employee Profiles */
