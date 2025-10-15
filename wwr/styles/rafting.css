@@ -336,6 +336,42 @@ footer p {
     font-weight: bold;
 }
 
+/* ===== Call to Action Button ===== */
+.cta-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* ===== Call to Action Section ===== */
+.cta-section {
+    max-width: 840px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--accent2-color); /* color de fondo suave */
+    border-radius: 8px;
+}
+
+.cta-section h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+    color: #fff;
+}
+
 .contact-form button[type="submit"]:hover {
     background-color: var(--accent1-color);
 }
